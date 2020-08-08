@@ -1,0 +1,14 @@
+version: '3'
+ mongodb:
+        image: mongo:4.4.0
+        container_name: "mongodb"
+        environment: #.env
+          - MONGODB_USER="${MONGODB_USER}"  # from .env
+          - MONGODB_PASS="${MONGODB_PASS}"  # from .env
+          - MONGO_DATA_DIR=/data/db
+          - MONGO_LOG_DIR=/dev/null
+        volumes:
+          - ./data/db:/data/db
+        ports:
+            - 27017:27017
+        command: mongod --smallfiles --logpath=/dev/null # --quiet
