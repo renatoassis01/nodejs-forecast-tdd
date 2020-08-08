@@ -9,6 +9,7 @@ module.exports = {
   preset: 'ts-jest',
   moduleNameMapper: {
     '@src/(.*)': '<rootDir>/src/$1',
+    '@controllers/(.*)': '<rootDir>/src/controllers/$1',
     '@test/(.*)': '<rootDir>/test/$1',
   },
 };
