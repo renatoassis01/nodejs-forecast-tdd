@@ -10,6 +10,7 @@
     "start:dev": "ts-node-dev --respawn src/index.ts",
     "start:debug": "ts-node-dev --inspect --exit-child --respawn src/index.ts",
     "test:functional": "jest --projects ./test --forceExit --runInBand",
+    "test": "jest",
     "style:check": "prettier --check 'src/**/*.ts' 'test/**/*.ts'",
     "style:fix": "prettier --write 'src/**/*.ts' 'test/**/*.ts'"
   },
@@ -17,6 +18,8 @@
   "author": "Renato Assis <renatoweverton@gmail.com>",
   "license": "ISC",
   "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/config": "0.0.36",
     "@types/express": "^4.17.7",
     "@types/jest": "^26.0.9",
     "@types/module-alias": "^2.0.0",
@@ -34,7 +37,9 @@
   },
   "dependencies": {
     "@overnightjs/core": "^1.7.4",
+    "axios": "^0.19.2",
     "body-parser": "^1.19.0",
+    "config": "^3.3.1",
     "express": "^4.17.1",
     "module-alias": "^2.2.2"
   }
