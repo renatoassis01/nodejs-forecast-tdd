@@ -7,6 +7,7 @@ import './utils/module-alias';
 export class SetupServer extends Server {
   constructor(private port: number = 3000) {
     super();
+    this.init();
   }
 
   public init(): void {
@@ -27,3 +28,4 @@ export class SetupServer extends Server {
     this.addControllers(forecastController);
   }
 }
+//https://www.youtube.com/watch?v=jz0nuQKD_4A

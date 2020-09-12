@@ -7,7 +7,7 @@ export class ForecastController {
   public getForecastForLoggerUser(_: Request, res: Response): void {
     res.send([
       {
-        "time": '2020-04-26T00:00:00+00:00',
+        time: '2020-04-26T00:00:00+00:00',
         forecast: [
           {
             lat: -33.792726,
