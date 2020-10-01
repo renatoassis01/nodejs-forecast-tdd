@@ -3,8 +3,8 @@ version: '3'
         image: mongo:4.4.0
         container_name: "mongodb"
         environment: #.env
-          - MONGODB_USER="${MONGODB_USER}"  # from .env
-          - MONGODB_PASS="${MONGODB_PASS}"  # from .env
+          #- MONGODB_USER="${MONGODB_USER}"  # from .env
+          #- MONGODB_PASS="${MONGODB_PASS}"  # from .env
           - MONGO_DATA_DIR=/data/db
           - MONGO_LOG_DIR=/dev/null
         volumes:
